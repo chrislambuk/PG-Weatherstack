@@ -6,12 +6,12 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>weatherstack</name>
+    <name>Weatherstack</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        A weather app.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="info@arqmediia.co.uk" href="http://arqmedia.co.uk">
+        Arq media
     </author>
     <content src="index.html" />
     <access origin="*" />

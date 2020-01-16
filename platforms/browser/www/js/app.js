@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', getWeather);
 
 document.getElementById('w-change-btn').addEventListener('click', (e) => {
   const city = document.getElementById('city').value;
-  console.log(city)
+  // console.log(city)
   weather.changeLocation(city);
   storage.setLocationData(city);
   getWeather();
