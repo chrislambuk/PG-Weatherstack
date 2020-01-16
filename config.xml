@@ -8,6 +8,10 @@
         Arq media
     </author>
     <content src="index.html" />
+    <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need location access to find things nearby</string>
+</edit-config>
+<preference name="iosPersistentFileLocation" value="Compatibility" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
