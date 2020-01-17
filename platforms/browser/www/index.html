@@ -25,12 +25,24 @@
         <h3 id="w-string"></h3>
         <p id="w-feels-like"></p>
         <img id="w-icon">
-        <ul id="w-details" class="list-group mt-3">
-          <li class="list-group-item" id="w-wind"></li>
-          <li class="list-group-item" id="w-cloud"></li>
-          <li class="list-group-item" id="w-humidity"></li>
+        <div id="w-details" class="card mt-3 p-4">
+
+          <div id="w-wind"></div>
+          <div style="height:10px" class="progress m-2">
+            <div id="windspeed" class="progress-bar bg-success" role="progressbar"></div>
+          </div>
+
+          <div id="w-cloud"></div>
+          <div style="height:10px" class="progress m-2">
+            <div id="cloudcover" class="progress-bar bg-info" role="progressbar"></div>
+          </div>
+
+          <div id="w-humidity"></div>
+          <div style="height:10px" class="progress m-2">
+            <div id="humid" class="progress-bar bg-warning" role="progressbar"></div>
+          </div>
           <!-- <li class="list-group-item" id="w-feels-like"></li> -->
-        </ul>
+        </div>
         <button type="button" class="btn btn-secondary my-5" data-toggle="modal" data-target="#locModal">
           Change City
         </button>
