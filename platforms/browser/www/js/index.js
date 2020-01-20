@@ -105,4 +105,5 @@ function onDeviceReady() {
 			})
 			.catch(err => console.log(err));
 	}
+	getWeather();
 }
