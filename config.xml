@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.arqmedia.weather" version="1.1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.arqmedia.weather" version="1.1.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>WeatherNOW</name>
     <description>
         A weather app.
@@ -17,9 +17,6 @@
 </edit-config>
 <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
     <string>need photo library access to get pictures from there</string>
-</edit-config>
-<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-    <string>need location access to find things nearby</string>
 </edit-config>
 <preference name="iosPersistentFileLocation" value="Compatibility" />
     <preference name="DisallowOverscroll" value="true" />
