@@ -37,8 +37,8 @@ function onDeviceReady() {
 			this.humid = document.getElementById('humid');
 		}
 		paint(weather) {
-			this.location.textContent = weather.location.name;
-			this.summary.textContent = `Currently: ${weather.current.weather_descriptions}`;
+			this.location.textContent = weather.request.query;
+			this.summary.textContent = `NOW: ${weather.current.weather_descriptions}`;
 			this.temp.textContent = `Temp: ${weather.current.temperature}ºC`;
 			this.feelslike.textContent = `Feels Like: ${weather.current.feelslike}ºC`;
 			this.icon.setAttribute('src', weather.current.weather_icons);
