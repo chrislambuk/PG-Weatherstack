@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no" />
   <meta name="msapplication-tap-highlight" content="no" />
-  <meta name="viewport"
-    content="viewport-fit=cover, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width" />
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <!-- <meta name="viewport"
+    content="viewport-fit=cover, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width" /> -->
   <!-- <meta http-equiv="Content-Security-Policy"
     content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: *" /> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -28,7 +29,7 @@
           <h4 id="w-feels-like"></h4>
           <img id="w-icon" class="shadow-sm">
         </div>
-          <div id="w-details" class="card mt-3 p-4">
+        <div id="w-details" class="card mt-3 p-4">
 
           <div id="w-wind"></div>
           <div style="height:5px" class="progress m-2">
@@ -89,10 +90,10 @@
   <script>
     // localStorage.setItem('city', 'London');
     if (localStorage.getItem('city') === null) {
-				city = 'London';
-			} else {
-				city = localStorage.getItem('city');
-			}
+      localStorage.setItem('city', 'London');
+    } else {
+      city = localStorage.getItem('city');
+    }
   </script>
 </body>
 
