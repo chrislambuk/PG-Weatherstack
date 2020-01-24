@@ -20,12 +20,15 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 mx-auto text-center p-5">
-          <h1 id="w-location"></h1>
-          <h2 id="w-desc"></h2>
+        <div class="detail">
+
+          <h2><strong id="w-location"></strong></h2>
+          <h3 id="w-desc"></h3>
           <h3 id="w-string"></h3>
           <h4 id="w-feels-like"></h4>
           <img id="w-icon" class="shadow-sm">
-        <div id="w-details" class="card mt-3 p-4">
+        </div>
+          <div id="w-details" class="card mt-3 p-4">
 
           <div id="w-wind"></div>
           <div style="height:5px" class="progress m-2">
@@ -84,7 +87,12 @@
   <script type="text/javascript" src="js/index.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
   <script>
-    localStorage.setItem('city', 'London');
+    // localStorage.setItem('city', 'London');
+    if (localStorage.getItem('city') === null) {
+				city = 'London';
+			} else {
+				city = localStorage.getItem('city');
+			}
   </script>
 </body>
 
