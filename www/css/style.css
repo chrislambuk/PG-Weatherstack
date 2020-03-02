@@ -22,7 +22,6 @@ img {
 	height: 50%;
 }
 
-
 @media (max-width: 320px){
 	img{
 		width: 50px;

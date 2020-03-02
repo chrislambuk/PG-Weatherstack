@@ -39,8 +39,8 @@ function onDeviceReady() {
 		paint(weather) {
 			this.location.textContent = weather.request.query;
 			this.summary.textContent = `NOW: ${weather.current.weather_descriptions}`;
-			this.temp.textContent = `Temp: ${weather.current.temperature}ºC`;
-			this.feelslike.textContent = `Feels Like: ${weather.current.feelslike}ºC`;
+			this.temp.textContent = `TEMP: ${weather.current.temperature}ºC`;
+			this.feelslike.textContent = `Feels like: ${weather.current.feelslike}ºC`;
 			this.icon.setAttribute('src', weather.current.weather_icons);
 			this.wind.textContent = `Wind Speed: ${weather.current.wind_speed} mph`;
 			this.windspeed.style.width = `${weather.current.wind_speed}%`;
@@ -101,7 +101,7 @@ function onDeviceReady() {
 			.getWeather()
 			.then(results => {
 				ui.paint(results);
-				console.log(results);
+				// console.log(results);
 			})
 			.catch(err => console.log(err));
 	}
