@@ -17,21 +17,21 @@
   <title>Weather</title>
 </head>
 
-<body class="pt-5">
+<body class="bg-dark text-light mt-5">
   <div class="container">
     <div class="row">
       <div class="col-md-8 mx-auto text-center p-5">
         <div class="detail">
-<nav class="fixed-top pt-4 bg-white">
+          <nav class="iPhoneXHeader fixed-top pt-4 bg-dark text-light">
 
-  <h3 id="w-location"></h3>
-</nav>
+            <h3 id="w-location"></h3>
+          </nav>
           <h3 id="w-desc"></h3>
           <h3 id="w-string"></h3>
           <h4 id="w-feels-like"></h4>
           <img id="w-icon" class="shadow-sm">
         </div>
-        <div id="w-details" class="card mt-3 p-4">
+        <div id="w-details" class="card mt-3 p-4 bg-dark text-light">
 
           <div id="w-wind"></div>
           <div style="height:5px" class="progress m-2">
@@ -49,17 +49,19 @@
           </div>
           <!-- <li class="list-group-item" id="w-feels-like"></li> -->
         </div>
-        <button type="button" class="btn btn-secondary my-5" data-toggle="modal" data-target="#locModal">
-          Change City
-        </button>
+        <div class="iPhoneXFooter">
+          <button type="button" class="btn btn-secondary my-5" data-toggle="modal" data-target="#locModal">
+            Change City
+          </button>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="locModal" tabindex="-1" role="dialog" aria-labelledby="locModalLabel" aria-hidden="true">
+  <div class="modal fade text-light" id="locModal" tabindex="-1" role="dialog" aria-labelledby="locModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content bg-dark">
         <div class="modal-header">
           <h5 class="modal-title" id="locModalLabel">Choose Location</h5>
           <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
