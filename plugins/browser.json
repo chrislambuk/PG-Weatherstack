@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.arqmedia.weather"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.arqmedia.weather"
+    },
+    "cordova-plugin-wkwebview-engine": {
+      "PACKAGE_NAME": "com.arqmedia.weather"
+    }
+  },
+  "dependent_plugins": {}
+}

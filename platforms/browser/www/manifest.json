@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "WeatherNOW",
+  "short_name": "WeatherNOW",
+  "version": "com.arqmedia.weather",
+  "description": "A weather app.",
+  "author": "Arq media",
+  "icons": [],
+  "start_url": "index.html"
+}

@@ -19,34 +19,38 @@
 
 <body class="bg-dark mt-4">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8 mx-auto text-center">
+      <div class="mx-auto text-center">
         <!-- detail card -->
         <div class="detail">
-          <h3 class="bg-dark text-light" id="w-location"></h3>
-          <hr class="bg-light">
+          <div class="location">
+              <h2 class="bg-dark text-light" id="w-location"></h2>
+          </div>
+          <img id="w-icon">
           <div class="bg-dark text-light">
-            <h2 id="w-desc"></h2>
-            <h3 id="w-string"></h3>
+            <h3 id="w-desc"></h3>
+            <h4 id="w-string"></h4>
             <h5 id="w-feels-like"></h5>
-            <img id="w-icon">
           </div>
         </div>
         <!-- progress bars -->
-        <div id="w-details" class="card mt-5 bg-dark text-light">
-          <div id="w-wind"></div>
-          <div style="height:5px" class="progress m-2">
-            <div id="windspeed" class="progress-bar bg-success" role="progressbar"></div>
+        <div id="w-details" class="mt-5 bg-dark text-light">
+          <div class="m-3">
+            <div id="w-wind"></div>
+            <div style="height:8px" class="progress my-2">
+              <div id="windspeed" class="progress-bar bg-warning" role="progressbar"></div>
+            </div>
           </div>
-
-          <div id="w-cloud"></div>
-          <div style="height:5px" class="progress m-2">
-            <div id="cloudcover" class="progress-bar bg-info" role="progressbar"></div>
+          <div class="m-3">
+            <div id="w-cloud"></div>
+            <div style="height:8px" class="progress my-2">
+              <div id="cloudcover" class="progress-bar bg-danger" role="progressbar"></div>
+            </div>
           </div>
-
-          <div id="w-humidity"></div>
-          <div style="height:5px" class="progress m-2">
-            <div id="humid" class="progress-bar bg-danger" role="progressbar"></div>
+          <div class="m-3">
+            <div id="w-humidity"></div>
+            <div style="height:8px" class="progress my-2">
+              <div id="humid" class="progress-bar bg-success" role="progressbar"></div>
+            </div>
           </div>
           <!-- <li class="list-group-item" id="w-feels-like"></li> -->
         </div>
@@ -56,7 +60,6 @@
           </button>
         </div>
       </div>
-    </div>
   </div>
 
   <!-- Modal -->
