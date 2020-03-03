@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "cordova-plugin-device": "^1.1.7",
+    "cordova-plugin-device-motion": "^1.2.5",
+    "cordova-plugin-globalization": "^1.0.9"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-wkwebview-engine": {}
+    },
+    "platforms": [
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "cordova-ios": "^5.1.1",
+    "cordova-plugin-statusbar": "^2.4.3",
+    "cordova-plugin-wkwebview-engine": "^1.2.1"
+  }
+}
