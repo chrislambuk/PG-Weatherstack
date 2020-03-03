@@ -39,10 +39,10 @@ function onDeviceReady() {
 		paint(weather) {
 			this.location.textContent = weather.request.query;
 			this.summary.textContent = `NOW: ${weather.current.weather_descriptions}`;
-			this.temp.textContent = `TEMP: ${weather.current.temperature}ºC`;
-			this.feelslike.textContent = `Feels like: ${weather.current.feelslike}ºC`;
+			this.temp.textContent = `TEMP: ${weather.current.temperature}ºC / ${Math.floor((weather.current.temperature * 9/5) + 32)}ºF`;
+			this.feelslike.textContent = `Feels like: ${weather.current.feelslike}ºC / ${Math.floor((weather.current.feelslike * 9/5) + 32)}ºF`;
 			this.icon.setAttribute('src', weather.current.weather_icons);
-			this.wind.textContent = `Wind Speed: ${weather.current.wind_speed} mph`;
+			this.wind.textContent = `Wind Speed: ${Math.floor(weather.current.wind_speed * 1.609)}kph / ${weather.current.wind_speed}mph`;
 			this.windspeed.style.width = `${weather.current.wind_speed}%`;
 			this.cloud.textContent = `Cloud Cover: ${weather.current.cloudcover}%`;
 			this.cloudcover.style.width = `${weather.current.cloudcover}%`;

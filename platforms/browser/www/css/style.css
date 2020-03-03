@@ -18,6 +18,7 @@ body {
 	padding-right: env(safe-area-inset-right);
 }
 #w-icon {
+	border: 3px solid whitesmoke;
 	border-radius: 50%;
 	margin: 10px auto;
 }
