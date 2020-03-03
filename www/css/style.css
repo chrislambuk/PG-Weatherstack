@@ -1,3 +1,7 @@
+html{
+	height: 100%;
+}
+
 body {
 	padding-top: constant(safe-area-inset-top); /* iOS 11.0 */
 	padding-top: env(safe-area-inset-top); /* iOS 11.2 */
@@ -13,30 +17,16 @@ body {
 	padding-left: env(safe-area-inset-left);
 	padding-right: env(safe-area-inset-right);
 }
-img {
-	border: 5px solid white;
-	border-bottom: 15px solid white;
-	margin: 0 auto;
-}
-.detail{
-	height: 50%;
+#w-icon {
+	border-radius: 50%;
+	margin: 10px auto;
 }
 
-@media (max-width: 320px){
-	img{
-		width: 50px;
-		border: 2px solid white;
-		border-bottom: 5px solid white;
-	}
-	.detail{
-		height: 40%;
-	}
-	h2{
-		font-size: 1.5rem;
-	}
-	h3,h4{
-		font-size: 1rem;
-	}
+#w-location, h3{
+	line-height: 3rem;
+}
+@media (max-width: 320px) {
+
 }
 
 @supports (padding: max(0px)) {
